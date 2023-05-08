@@ -29,7 +29,8 @@ theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
 
 
 Example of Theme Use
-```{r, func, echo=T, eval=T, message = F, warning = F}
+```{r, knitr::fig_chunk, func, echo=T, eval=T, message = F, warning = F}
+
 P1 = ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
   geom_point(aes(color=Species))+
   labs(title= 'Petal Width vs. Length')+
