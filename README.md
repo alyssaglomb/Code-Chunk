@@ -1,7 +1,7 @@
 # Code Chunk
 
-## My Theme. 
-### SIS 750 Portfolio - final
+## Unique Plot Theme for SIS 750 Portfolio  
+### Alyssa Glomb
 
 ```{r, func, echo=T, eval=T, message = F, warning = F}
 #open packages
