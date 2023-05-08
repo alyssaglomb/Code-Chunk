@@ -10,9 +10,9 @@ This theme is based on the `ggplot` theme `theme_light` and removes the backgrou
 
 
 
-```{r setup, include = FALSE}
+```{r setup, include = TRUE}
 knitr::opts_chunk$set(
-  echo=TRUE, warning=FALSE, dev='png',
+  echo=FALSE, warning=FALSE, dev='png',
   fig.width = 4, fig.asp = 0.618, fig.align = 'center', 
   out.width = "70%")
   
