@@ -3,6 +3,13 @@
 ## Unique Plot Theme for SIS 750 Portfolio  
 ### Alyssa Glomb
 
+
+This code chunk is a unique theme for plots and graphs in `R`. The code is presented below with annotations along with example graphs showing how the theme can be applied to use the same style on multiple graphs easily. 
+
+This theme is based on the `ggplot` theme `theme_light` and removes the background from both the plot and legend. Minor gridlines are removed to reduce visual clutter. The title is modified to be bold and centered.  
+
+
+
 ```{r, func, echo=T, eval=T, message = F, warning = F}
 #open packages
 library(tidyverse)
