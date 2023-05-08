@@ -10,7 +10,12 @@ This theme is based on the `ggplot` theme `theme_light` and removes the backgrou
 
 
 
-```{r, func, echo=T, eval=T, message = F, warning = F}
+```{r setup, include = TRUE}
+knitr::opts_chunk$set(
+  echo=TRUE, warning=FALSE, dev='png',
+  fig.width = 4, fig.asp = 0.618, fig.align = 'center', 
+  out.width = "70%")
+  
 #open packages
 library(tidyverse)
 library(ggplot2)
@@ -29,7 +34,7 @@ theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
 
 
 Example of Theme Use
-```{r, knitr::fig_chunk, func, echo=T, eval=T, message = F, warning = F}
+```{r, echo=T, eval=T, message = F, warning = F}
 
 P1 = ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
   geom_point(aes(color=Species))+
