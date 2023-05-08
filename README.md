@@ -10,7 +10,7 @@ This theme is based on the `ggplot` theme `theme_light` and removes the backgrou
 
 
 
-```{r setup, include = TRUE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   echo=TRUE, warning=FALSE, dev='png',
   fig.width = 4, fig.asp = 0.618, fig.align = 'center', 
@@ -19,8 +19,12 @@ knitr::opts_chunk$set(
 #open packages
 library(tidyverse)
 library(ggplot2)
+```
 
-#theme
+Theme
+```
+{r, echo=T, eval=T, message = F, warning = F}
+
 theme_AMG=function(){ 
 theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
   theme(
@@ -32,15 +36,13 @@ theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
     panel.grid.minor=element_blank())} #remove minor grid lines
 ```
 
-
 Example of Theme Use
-```{r, echo=T, eval=T, message = F, warning = F}
+```
+{r, echo=T, eval=T, message = F, warning = F}
 
-P1 = ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
+ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
   geom_point(aes(color=Species))+
   labs(title= 'Petal Width vs. Length')+
   theme_AMG()
-  
-print(P1)
 
 ```
