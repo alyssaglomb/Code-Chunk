@@ -19,4 +19,9 @@ theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
     plot.subtitle=element_text(hjust=0.5),
     panel.grid.minor=element_blank())} #remove minor grid lines
 
+#example
+ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
+  geom_point(aes(color=Species))+
+  labs(title= 'Petal Width vs. Length')+
+  theme_AMG()
 ```
