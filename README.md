@@ -8,7 +8,8 @@ easily.
 
 This theme is based on the `ggplot` theme `theme_light` and removes the
 background from both the plot and legend. Minor gridlines are removed to
-reduce visual clutter. The title is modified to be bold and centered.
+reduce visual clutter. The title is modified to be centered in blue
+text.
 
 ### Theme
 
@@ -26,4 +27,20 @@ theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
 
 ### Examples
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
+``` r
+ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
+  geom_point(aes(color=Species))+
+  labs(title= 'Petal Length vs. Width')+
+  theme_AMG()
+```
+
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
+``` r
+ggplot(cars, aes(x=speed, y=dist))+
+  geom_point()+
+  labs(title= 'Car Speed vs. Distance')+
+  theme_AMG()
+```
+
+![](README_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
