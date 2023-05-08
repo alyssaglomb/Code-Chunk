@@ -30,17 +30,17 @@ theme_light(base_size=12, base_family="Avenir") %+replace% #set consistent font
 ``` r
 ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
   geom_point(aes(color=Species))+
-  labs(title= 'Petal Length vs. Width')+
+  labs(title= 'Petal Length vs. Width', subtitle= 'Example 1')+
   theme_AMG()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+<img src="README_files/figure-gfm/unnamed-chunk-2-1.png" width="70%" style="display: block; margin: auto;" />
 
 ``` r
 ggplot(cars, aes(x=speed, y=dist))+
   geom_point()+
-  labs(title= 'Car Speed vs. Distance')+
+  labs(title= 'Car Speed vs. Distance', subtitle= 'Example 2')+
   theme_AMG()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
+<img src="README_files/figure-gfm/unnamed-chunk-2-2.png" width="70%" style="display: block; margin: auto;" />
